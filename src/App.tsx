@@ -228,10 +228,7 @@ const App: Component = () => {
                                 {game().season} |{" "}
                                 {game().seasonType.charAt(0).toUpperCase() +
                                   game().seasonType.slice(1)}
-                                {game().seasonType === "regular" &&
-                                  `
-                      | Week ${game().week}
-                    `}
+                                {game().seasonType === "regular" &&` | Week ${game().week}`}
                               </div>
                               {/* Date/Time Display */}
                               <p class="text-sm font-medium text-base-content/80">
