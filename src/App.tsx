@@ -606,7 +606,7 @@ const App: Component = () => {
                                 {game().seasonType.charAt(0).toUpperCase() +
                                   game().seasonType.slice(1)}
                                 {game().seasonType === "regular" &&
-                                  `| Week ${game().week}`}
+                                  ` | Week ${game().week}`}
                               </div>
                               <p class="text-sm font-medium text-base-content/80">
                                 <time>{formattedGameDate()}</time>
