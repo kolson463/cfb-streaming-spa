@@ -13,7 +13,7 @@ import { themeChange } from "theme-change";
 import { Game, RowGame, scrollSpeeds, stateToTimeZone } from "./utils";
 
 const fetchSeasonData = async (): Promise<Game[]> => {
-  const res = await fetch("/2000-2025_winners.json");
+  const res = await fetch(import.meta.env.BASE_URL + "2000-2025_winners.json")
   if (!res.ok) throw new Error("Failed to load season data");
   return res.json();
 };
