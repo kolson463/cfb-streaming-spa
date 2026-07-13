@@ -443,7 +443,7 @@ const App: Component = () => {
         <h1 class="text-xl md:text-2xl font-bold flex flex-row">
           Lineal <span class="flex lg:hidden ml-1 mr-1">NCAAF</span>
           <span class="hidden lg:flex ml-1 mr-1">College Football</span>
-          Champion 2000–2025
+          Champion 2000–2024
         </h1>
         <label class="swap swap-rotate">
           <input type="checkbox" class="theme-controller" value="dim" />
