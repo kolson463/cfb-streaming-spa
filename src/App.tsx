@@ -13,7 +13,7 @@ import { themeChange } from "theme-change";
 import { Game, RowGame, scrollSpeeds, stateToTimeZone } from "./utils";
 
 const fetchSeasonData = async (): Promise<Game[]> => {
-  const res = await fetch(import.meta.env.BASE_URL + "2000-2025_winners.json")
+  const res = await fetch(import.meta.env.BASE_URL + "2000-2025_winners.json");
   if (!res.ok) throw new Error("Failed to load season data");
   return res.json();
 };
@@ -228,7 +228,8 @@ const App: Component = () => {
                                 {game().season} |{" "}
                                 {game().seasonType.charAt(0).toUpperCase() +
                                   game().seasonType.slice(1)}
-                                {game().seasonType === "regular" &&` | Week ${game().week}`}
+                                {game().seasonType === "regular" &&
+                                  ` | Week ${game().week}`}
                               </div>
                               {/* Date/Time Display */}
                               <p class="text-sm font-medium text-base-content/80">
